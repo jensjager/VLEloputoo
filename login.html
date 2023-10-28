@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header><h1>Infoportaal</h1></header>
+        <div class="line"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Avaleht</a></li>
+                <li><a href="activities.html">Tegevused</a></li>
+                <li><a href="login.html" class="active">Sisselogimine</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <div class="form">
+                <div id="switch">
+                    <button
+                        onclick="switchForm(true)"
+                        class="active"
+                        id="login"
+                    >
+                        Sisselogimine
+                    </button>
+                    <button onclick="switchForm(false)" id="register">
+                        Registreerimine
+                    </button>
+                </div>
+                <form action="submit">
+                    <div>
+                        <label for="kasutajanimi">Kasutajanimi:</label>
+                        <input
+                            type="text"
+                            id="kasutajanimi"
+                            name="kasutajanimi"
+                            required
+                        />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="parool">Parool:</label>
+                        <input type="text" id="parool" name="parool" required />
+                    </div>
+                    <button type="submit">Logi sisse</button>
+                </form>
+            </div>
+        </div>
+        <div class="line footer"></div>
+        <footer>Infoportaal 2023</footer>
+    </body>
+    <script>
+        function switchForm(isLogin) {
+            const loginButton = document.getElementById("login");
+            const registerButton = document.getElementById("register");
+
+            if (isLogin) {
+                registerButton.classList.remove("active");
+                loginButton.classList.add("active");
+            } else {
+                loginButton.classList.remove("active");
+                registerButton.classList.add("active");
+            }
+        }
+    </script>
+</html>

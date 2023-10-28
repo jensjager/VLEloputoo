@@ -1,0 +1,197 @@
+body {
+    background-color: #b7eafb;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #89dcff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #89dcff;
+    padding: 10px 10vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.line {
+    width: 100vw;
+    height: 5px;
+    background-color: #1fb6ff;
+}
+
+.mainpage {
+    margin: 5vw;
+    columns: 2;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    margin: 10vh;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1fb6ff;
+    width: 50vw;
+    min-width: 250px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities > * {
+    margin: 30px 0 0 0;
+}
+
+.activities h3 {
+    width: fit-content;
+}
+
+.content {
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 30px;
+}
+
+.content img {
+    width: 40vw;
+    height: fit-content;
+}
+
+.links {
+    display: flex;
+    gap: 4vh;
+    flex-direction: column;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+form button {
+    margin-top: 30px;
+    width: 60%;
+    border: 2px solid black;
+    background: white;
+    height: 2rem;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid black;
+    background: white;
+    height: 2rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 36px;
+}
+
+footer {
+    background-color: #89dcff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-weight: bold;
+    bottom: 0;
+    position: absolute;
+}
+
+.main-image {
+    width: 100%;
+    height: fit-content;
+}
+
+#switch {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    height: 2rem;
+    display: flex;
+    width: 75%;
+    align-self: center;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#switch button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainpage {
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        width: 70vw;
+        height: fit-content;
+    }
+
+    form div {
+        width: 90%;
+    }
+
+    .form {
+        width: 90%;
+    }
+}
